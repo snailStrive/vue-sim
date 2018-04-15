@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing:border-box;}
+html{min-height:100%; font-family:"微软雅黑";}
+body{min-height:100%; padding:0px; margin:0px; -webkit-text-size-adjust:none; padding:2rem 0 2.3rem;}
+div,ul,ol,li,td,dl,dt,dd,header,footer,section,nav,p,form,h1,h2,h3,h4,h5,h6{padding:0px; margin:0px}
+h1,h2,h3,h4,h5,h6 {font-size:1em; font-weight:normal;}
+ol,ul{list-style-type:none;}
+a{text-decoration:none; color:#333333}a img{border:0}
+.hide{display:none;}.clear{clear:both;}
+#cover{position:fixed; width:100%; height:100%; left:0; top:0; background-color:#000; filter:alpha(opacity=50); opacity:.5; z-index:99; display:none;}
+
+
+header ,main ,footer{margin:auto; width:100%; clear:both;}
+header{height:2rem; line-height: 2rem; background-color: #ff6600; color: #fff; position: fixed; top:0; left:0; z-index: 9;}
+header div{float:left; width:12%;}
+header div a{display:block; text-align:center; font-size:1.2rem; color: #fff;}
+header h1{float:left; width:76%; text-align: center; font-size:.9em;}
+header span{float: left; width:12%;}
+header span a{display:block; text-align:center; font-size:1.1rem; color: #fff;}
+nav{position: fixed; left: 0; bottom: 0; width:100%; height: 2.3rem; background-color: #eee; border-top:1px solid #ddd; z-index: 9;}
+nav div{float: left; width:23%; text-align: center; line-height: 1rem; margin-top: .2rem; transition: all 500ms 0ms ease;}
+nav div a{display: block;}
+nav div i{font-size:1.1rem;}
+nav div p{font-size: .65rem;}
+nav span{float: left; width:8%; height: 2.3rem; line-height: 2.3rem; text-align: center; transition: all 500ms 0ms ease; opacity: 0; visibility: hidden; transform: translateY(10%);}
+nav span a{display: block; height: 2.3rem;}
+nav span i{display: inline-block;}
+nav div a.router-link-exact-active{color:#f00;}
+nav.topAni div{width:21%;}
+nav.topAni span{width:16%; opacity: 1; visibility: visible; transform: translateY(0);}
+
+
+
+
+@media only screen and (min-width: 160px){html {font-size: 10px !important;}}
+@media only screen and (min-width: 240px){html {font-size: 15px !important;}}
+@media only screen and (min-width: 320px){html {font-size: 20px !important;}}
+@media only screen and (min-width: 360px){html {font-size: 22.5px !important;}}
+@media only screen and (min-width: 375px){html {font-size: 23.4px !important;}}
+@media only screen and (min-width: 410px){html {font-size: 25.6px !important;}}
+@media only screen and (min-width: 414px){html {font-size: 25.8px !important;}}
+@media only screen and (min-width: 480px){html {font-size: 30px !important;}}
+@media only screen and (min-width: 600px){html {font-size: 37.5px !important;}}
+@media (min-width: 640px) {
+	html{font-size: 24px !important; }
+	/*html{font-size: 40px !important; }*/
+	main{width:640px;}
+}
+@font-face {font-family: "iconfont";
+  src: url('font/iconfont.eot?t=1523716226511'); /* IE9*/
+  src: url('font/iconfont.eot?t=1523716226511#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('font/iconfont.ttf?t=1523716226511') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('font/iconfont.svg?t=1523716226511#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
