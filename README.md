@@ -6,7 +6,9 @@
 
 ``` bash
 # install dependencies
-npm install
+# npm install
+npm install -g vue-cli
+vue install webpack myproject
 
 # serve with hot reload at localhost:8080
 npm run dev
